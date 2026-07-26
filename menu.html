@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú | Taquería EL NEGRO — Tacos en San José Insurgentes</title>
+  <meta name="description" content="Consulta el menú completo de Taquería EL NEGRO: tacos, al pastor, arrachera, tortas, alambres, quesos y bebidas. Tacos en San José Insurgentes, Ciudad de México." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://elnegro.netlify.app/menu.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Taquería EL NEGRO" />
+  <meta property="og:title" content="Menú | Taquería EL NEGRO" />
+  <meta property="og:description" content="Tacos, al pastor, arrachera, tortas, alambres, quesos y bebidas. El menú completo de la taquería favorita de San José Insurgentes." />
+  <meta property="og:image" content="https://elnegro.netlify.app/images/hero-tacos.jpg" />
+  <meta property="og:url" content="https://elnegro.netlify.app/menu.html" />
+  <meta property="og:locale" content="es_MX" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Schema.org: Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Taquería EL NEGRO",
+    "foundingDate": "1962",
+    "image": "https://elnegro.netlify.app/images/hero-tacos.jpg",
+    "url": "https://elnegro.netlify.app/",
+    "menu": "https://elnegro.netlify.app/menu.html",
+    "servesCuisine": ["Mexicana", "Tacos", "Antojitos"],
+    "priceRange": "$100–200",
+    "telephone": "+525556639668",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Félix Parra 10-B",
+      "addressLocality": "San José Insurgentes, Benito Juárez",
+      "addressRegion": "Ciudad de México",
+      "postalCode": "03900",
+      "addressCountry": "MX"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "1974"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "14:00", "closes": "22:00" }
+    ]
+  }
+  </script>
+
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Taquería EL NEGRO, inicio">EL <span>NEGRO</span></a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html" class="is-active">Menú</a></li>
+          <li><a href="index.html#ubicacion">Ubicación</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--yellow btn--sm" href="tel:+525556639668" data-config="tel-href">Llamar</a>
+        <button class="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="menu-movil">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ NAV MÓVIL ============ -->
+  <nav id="menu-movil" class="mobile-nav" aria-label="Navegación móvil">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="index.html#ubicacion">Ubicación</a></li>
+      <li><a class="btn btn--yellow" href="tel:+525556639668" data-config="tel-href">Llamar ahora</a></li>
+    </ul>
+  </nav>
+
+  <main id="contenido">
+    <!-- ============ HERO DE MENÚ ============ -->
+    <section class="menu-hero">
+      <div class="container">
+        <h1>El <span>menú</span> completo</h1>
+        <p>Todo lo que preparamos, directo del trompo y el comal a tu mesa.</p>
+      </div>
+    </section>
+
+    <div class="checker-strip"></div>
+
+    <!-- ============ NAV DE ANCLAS (STICKY) ============ -->
+    <nav class="menu-anchor-nav" aria-label="Categorías del menú">
+      <ul>
+        <li><a href="#tacos">Tacos</a></li>
+        <li><a href="#al-pastor">Al pastor</a></li>
+        <li><a href="#arrachera">Arrachera</a></li>
+        <li><a href="#sopas-caldos">Sopas y caldos</a></li>
+        <li><a href="#tortas">Tortas</a></li>
+        <li><a href="#alambres">Alambres</a></li>
+        <li><a href="#quesos">Quesos</a></li>
+        <li><a href="#bebidas">Bebidas</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!-- REEMPLAZAR: todos los precios ($XX) con los precios reales vigentes -->
+
+      <!-- ============ TACOS ============ -->
+      <section id="tacos" class="menu-category">
+        <h2 class="menu-category-title">Tacos</h2>
+        <p class="menu-category-note">Tacos de 100 g, servidos en tortilla de maíz.</p>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Bistec, costilla, pollo o chuleta</div>
+              <div class="menu-item-desc">También disponible con queso</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Taco de bistec con nopal</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Taco de nopal con queso</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Taco de bistec con chorizo</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+        </div>
+
+        <h3 class="menu-subcategory-title">Lo tradicional</h3>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Flauta de res</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Flauta de res extra dorada</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Tostada de pata</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Tostada de tinga</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Cebollitas</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ AL PASTOR ============ -->
+      <section id="al-pastor" class="menu-category">
+        <h2 class="menu-category-title">Al pastor</h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Taco al pastor</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Gringa</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Que me ves</div>
+              <div class="menu-item-desc">Pastor, bistec y queso</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Alambre especial de pastor</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Torta pastora</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ARRACHERA ============ -->
+      <section id="arrachera" class="menu-category">
+        <h2 class="menu-category-title">Arrachera</h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Arrachera (100 g)</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Arrachera (200 g)</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Sincronizada de arrachera</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SOPAS Y CALDOS ============ -->
+      <section id="sopas-caldos" class="menu-category">
+        <h2 class="menu-category-title">Sopas y caldos</h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Sopa de champiñones</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Caldo de camarón</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Frijoles charros</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Birria de res</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TORTAS ============ -->
+      <section id="tortas" class="menu-category">
+        <h2 class="menu-category-title">Tortas</h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Chorizo, jamón, huevo, salchicha o pierna</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Pollo o milanesa</div>
+              <div class="menu-item-desc">También disponible con queso</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Jamón con queso</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Poblana</div>
+              <div class="menu-item-desc">Bistec, poblano y queso manchego</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Cubana</div>
+              <div class="menu-item-desc">Pierna, queso amarillo, queso manchego y jamón</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Negrita</div>
+              <div class="menu-item-desc">Milanesa, poblano y queso manchego</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Norteña</div>
+              <div class="menu-item-desc">Bistec, pierna y chorizo</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Popis</div>
+              <div class="menu-item-desc">Chuleta, tocino, pollo y queso manchego</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Costeña</div>
+              <div class="menu-item-desc">Pollo, poblano, queso manchego y queso amarillo</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Hawaiana</div>
+              <div class="menu-item-desc">Jamón, pierna, tocino, piña, queso manchego y queso amarillo</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Estrella</div>
+              <div class="menu-item-desc">Milanesa, queso manchego y salchicha</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ALAMBRES ============ -->
+      <section id="alambres" class="menu-category">
+        <h2 class="menu-category-title">Alambres</h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Orden de bistec, costilla, pollo o chuleta</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Quesada</div>
+              <div class="menu-item-desc">Chuleta, costilla o bistec con queso</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Tocinada</div>
+              <div class="menu-item-desc">Tocino y queso con chuleta, costilla o bistec</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Alambre</div>
+              <div class="menu-item-desc">Tocino, poblano y cebolla con chuleta, pollo, costilla o bistec</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Especial</div>
+              <div class="menu-item-desc">Queso, tocino, poblano y cebolla con chuleta, pollo, costilla o bistec</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Andador</div>
+              <div class="menu-item-desc">Bistec, cebolla y chorizo · también con queso</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Champiqueso</div>
+              <div class="menu-item-desc">También disponible con carne</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Champiñón con jitomate, poblano y queso</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Pollita</div>
+              <div class="menu-item-desc">Pollo, poblano, tocino, queso y jamón</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Morenita</div>
+              <div class="menu-item-desc">Chorizo, tocino, poblano, bistec, queso y jitomate</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Coladita</div>
+              <div class="menu-item-desc">Chuleta, piña, queso y tocino</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ QUESOS ============ -->
+      <section id="quesos" class="menu-category">
+        <h2 class="menu-category-title">Quesos</h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Queso fundido</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Choriqueso</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Quesadilla de queso</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Quesadilla de chorizo con queso</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Quesadilla de poblano con queso</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Quesadilla de nopal con queso</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Quesadilla de huitlacoche</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Quesadilla de pollo con champiñones</div>
+              <div class="menu-item-desc">Con queso</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Sincronizada</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Quesadilla de champiñones</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BEBIDAS ============ -->
+      <section id="bebidas" class="menu-category">
+        <h2 class="menu-category-title">Bebidas</h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Agua embotellada</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Aguas frescas (16 oz)</div>
+              <div class="menu-item-desc">Horchata, guanábana, maracuyá, fresa, pepino con chía</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Refresco</div>
+              <div class="menu-item-desc">Coca-Cola o Coca-Cola Light</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Cerveza</div>
+              <div class="menu-item-desc">Corona, Modelo Especial, Victoria o Negra Modelo</div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Michelada</div>
+              <div class="menu-item-desc"></div>
+            </div>
+            <span class="menu-item-leader" aria-hidden="true"></span>
+            <span class="menu-item-price">$XX</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="menu-cta">
+      <div class="container">
+        <h2>¿Se te antojó?</h2>
+        <div class="menu-cta-actions">
+          <a class="btn btn--dark" href="#" data-config="maps-href" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn--outline" href="tel:+525556639668" data-config="tel-href">Llamar</a>
+          <a class="btn btn--outline" href="#" data-config="ubereats-href" target="_blank" rel="noopener">Uber Eats</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>EL NEGRO</h4>
+          <address>
+            Félix Parra 10-B, San José Insurgentes<br />
+            Benito Juárez, 03900, Ciudad de México
+          </address>
+          <div class="footer-social footer-social--spaced">
+            <!-- REEMPLAZAR: enlaces reales de redes sociales -->
+            <a href="#" data-config="instagram-href" aria-label="Instagram de Taquería EL NEGRO" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            </a>
+            <a href="#" data-config="facebook-href" aria-label="Facebook de Taquería EL NEGRO" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 9V6a1 1 0 0 1 1-1h2V2h-3a4 4 0 0 0-4 4v3H7v3h3v9h4v-9h3l1-3h-4z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="index.html#ubicacion">Ubicación</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="tel:+525556639668" data-config="tel-href">Llamar: <span data-config="phone-display">55 5563 9668</span></a></li>
+            <li><a href="#" data-config="maps-href" target="_blank" rel="noopener">Cómo llegar</a></li>
+            <li><a href="#" data-config="ubereats-href" target="_blank" rel="noopener">Pedir por Uber Eats</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; <span data-current-year>2026</span> Taquería EL NEGRO. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
