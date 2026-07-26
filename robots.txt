@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taqueria-elnegro.netlify.app/sitemap.xml
