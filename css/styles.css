@@ -28,7 +28,7 @@
   --color-gray-500: var(--color-muted);
   --color-gray-700: #443F2F;
 
-  --font-display: 'Chewy', sans-serif;
+  --font-display: 'Alfa Slab One', sans-serif;
   --font-serif: 'Instrument Serif', Georgia, serif;
   --font-sans: 'IBM Plex Sans', sans-serif;
 
@@ -208,17 +208,14 @@ input:focus-visible {
 }
 
 .logo {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  color: var(--color-ink);
-  letter-spacing: 0.5px;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
 }
 
-.logo span {
-  color: var(--color-gold-text);
+.logo img {
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 .main-nav {
@@ -326,7 +323,7 @@ input:focus-visible {
   display: block;
   color: var(--color-ink);
   font-family: var(--font-display);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 14px 4px;
   border-bottom: 1px solid var(--color-line);
 }
@@ -387,15 +384,14 @@ input:focus-visible {
 }
 
 .hero h1 {
-  font-size: clamp(2.8rem, 7vw, 5rem);
-  line-height: 1.1;
-  color: var(--color-paper);
   margin-bottom: 20px;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+  filter: drop-shadow(0 2px 16px rgba(0, 0, 0, 0.45));
 }
 
-.hero h1 span {
-  color: var(--color-yellow);
+.hero-logo-mark {
+  width: clamp(220px, 32vw, 420px);
+  height: auto;
+  display: block;
 }
 
 .hero p {
@@ -436,7 +432,7 @@ section {
 }
 
 .section-title {
-  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-size: clamp(1.7rem, 3.6vw, 2.4rem);
   margin-bottom: 12px;
 }
 
@@ -618,7 +614,7 @@ section {
 
 .reviews-score {
   font-family: var(--font-display);
-  font-size: 2.9rem;
+  font-size: 2.5rem;
 }
 
 .reviews-count {
@@ -971,7 +967,7 @@ section {
 
 .menu-hero h1 {
   color: var(--color-paper);
-  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  font-size: clamp(2rem, 5vw, 2.8rem);
 }
 
 .menu-hero h1 span {
@@ -1032,7 +1028,7 @@ section {
 }
 
 .menu-category-title {
-  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-size: clamp(1.5rem, 3.6vw, 2.1rem);
   margin-bottom: 6px;
 }
 
