@@ -142,12 +142,12 @@ input:focus-visible {
   font-weight: 600;
   font-size: 0.92rem;
   letter-spacing: 0.2px;
-  transition: transform var(--transition), background-color var(--transition), color var(--transition), border-color var(--transition);
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
   white-space: nowrap;
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-2px); /* fallback si GSAP no carga */
 }
 
 .btn--yellow {
@@ -359,14 +359,26 @@ input:focus-visible {
   display: flex;
   align-items: flex-end;
   padding-top: var(--header-height);
+  overflow: hidden;
+  background-color: var(--color-ink);
+}
+
+/* Capa de fondo separada del contenido para poder animarla (zoom Ken Burns)
+   sin distorsionar el texto de encima. Ver initHeroIntro en main.js. */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transform-origin: center;
   background:
     linear-gradient(180deg, rgba(20, 23, 36, 0.45) 0%, rgba(20, 23, 36, 0.55) 45%, rgba(20, 23, 36, 0.92) 100%),
     linear-gradient(90deg, rgba(20, 23, 36, 0.75) 0%, rgba(20, 23, 36, 0.15) 55%, transparent 80%),
     url('../images/hero-tacos.jpg') center/cover no-repeat;
-  background-color: var(--color-ink);
 }
 
 .hero-content {
+  position: relative;
+  z-index: 1;
   color: var(--color-paper);
   padding-block: 48px 64px;
   max-width: 660px;
@@ -490,22 +502,19 @@ section {
 
 .quick-facts {
   display: grid;
-  gap: 1px;
-  background: var(--color-line);
-  border: 1px solid var(--color-line);
+  gap: 20px;
   grid-template-columns: 1fr;
   max-width: 900px;
   margin: 0 auto;
 }
 
+/* Los dos informativos van planos, sin caja: no se pueden presionar. */
 .quick-fact {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  padding: 32px 24px;
-  background: var(--color-paper);
-  transition: background-color var(--transition);
+  padding: 12px;
 }
 
 .quick-fact svg {
@@ -520,12 +529,25 @@ section {
   font-size: 0.98rem;
 }
 
+/* Único botón real del grupo: caja verde Uber Eats, para que se note que sí se presiona. */
 .quick-fact--link {
+  padding: 32px 24px;
+  background: #06C167;
+  border-radius: var(--radius);
   transition: background-color var(--transition);
 }
 
+.quick-fact--link svg,
+.quick-fact--link strong {
+  color: #fff;
+}
+
+.quick-fact--link .quick-fact-note {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 .quick-fact--link:hover {
-  background: var(--color-paper-alt);
+  background: #05a857;
 }
 
 .quick-fact-note {
@@ -567,6 +589,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform-origin: center;
 }
 
 .dish-card-body {
@@ -727,6 +750,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform-origin: center;
 }
 
 @media (min-width: 700px) {
@@ -927,15 +951,16 @@ section {
 }
 
 /* ---------- Fade-in en scroll ---------- */
+/* La animación la controla GSAP (ScrollTrigger) en main.js — sin transition
+   aquí para no pelearse frame a frame con el tween. */
 .fade-in {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 600ms ease, transform 600ms ease;
+  transform: translateY(36px) scale(0.97);
 }
 
 .fade-in.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
