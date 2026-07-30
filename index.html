@@ -8,6 +8,18 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://taqueria-elnegro.netlify.app/" />
 
+  <!-- Favicon: la "N" del logotipo en crema sobre el azul de marca -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <meta name="theme-color" content="#1A1E2E" />
+
+  <!-- El fondo del hero es una imagen CSS: sin este preload el navegador la
+       descubre hasta después de leer la hoja de estilos y retrasa el LCP.
+       El atributo type hace que los navegadores sin WebP se lo salten. -->
+  <link rel="preload" as="image" href="images/hero-tacos.webp" type="image/webp" fetchpriority="high" />
+
   <!-- Open Graph -->
   <meta property="og:type" content="restaurant" />
   <meta property="og:site_name" content="Taquería EL NEGRO" />
@@ -156,32 +168,50 @@
         <div class="dish-grid">
           <article class="dish-card fade-in">
             <div class="dish-card-photo">
-              <img src="images/favorito-pastor.jpg" alt="Platillo de Taquería EL NEGRO" loading="lazy" width="800" height="1422" />
+              <picture>
+                <source srcset="images/favorito-pastor.webp" type="image/webp" />
+                <img src="images/favorito-pastor.jpg" alt="Platillo de Taquería EL NEGRO" loading="lazy" width="800" height="1422" />
+              </picture>
             </div>
           </article>
           <article class="dish-card fade-in">
             <div class="dish-card-photo">
-              <img src="images/favorito-torta.jpg" alt="Platillo de Taquería EL NEGRO" loading="lazy" width="800" height="1067" />
+              <picture>
+                <source srcset="images/favorito-torta.webp" type="image/webp" />
+                <img src="images/favorito-torta.jpg" alt="Platillo de Taquería EL NEGRO" loading="lazy" width="800" height="1067" />
+              </picture>
             </div>
           </article>
           <article class="dish-card fade-in">
             <div class="dish-card-photo">
-              <img src="images/gallery-quesadilla.jpg" alt="Platillo de Taquería EL NEGRO" loading="lazy" width="800" height="1067" />
+              <picture>
+                <source srcset="images/gallery-quesadilla.webp" type="image/webp" />
+                <img src="images/gallery-quesadilla.jpg" alt="Platillo de Taquería EL NEGRO" loading="lazy" width="800" height="1067" />
+              </picture>
             </div>
           </article>
           <article class="dish-card fade-in">
             <div class="dish-card-photo">
-              <img src="images/gallery-tacos-cerveza.jpg" alt="Platillo de Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+              <picture>
+                <source srcset="images/gallery-tacos-cerveza.webp" type="image/webp" />
+                <img src="images/gallery-tacos-cerveza.jpg" alt="Platillo de Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+              </picture>
             </div>
           </article>
           <article class="dish-card fade-in">
             <div class="dish-card-photo">
-              <img src="images/gallery-especial.jpg" alt="Platillo de Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+              <picture>
+                <source srcset="images/gallery-especial.webp" type="image/webp" />
+                <img src="images/gallery-especial.jpg" alt="Platillo de Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+              </picture>
             </div>
           </article>
           <article class="dish-card fade-in">
             <div class="dish-card-photo">
-              <img src="images/gallery-nopales.jpg" alt="Platillo de Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+              <picture>
+                <source srcset="images/gallery-nopales.webp" type="image/webp" />
+                <img src="images/gallery-nopales.jpg" alt="Platillo de Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+              </picture>
             </div>
           </article>
         </div>
@@ -232,34 +262,64 @@
 
         <div class="gallery-grid">
           <div class="gallery-item has-photo fade-in">
-            <img src="images/gallery-interior.jpg" alt="Interior de Taquería EL NEGRO, mesas y ambiente con luces amarillas" loading="lazy" width="1200" height="900" />
+            <picture>
+              <source srcset="images/gallery-interior.webp" type="image/webp" />
+              <img src="images/gallery-interior.jpg" alt="Interior de Taquería EL NEGRO, mesas y ambiente con luces amarillas" loading="lazy" width="1200" height="900" />
+            </picture>
           </div>
           <div class="gallery-item has-photo fade-in">
-            <img src="images/gallery-trompo.jpg" alt="Trompo de pastor de Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+            <picture>
+              <source srcset="images/gallery-trompo.webp" type="image/webp" />
+              <img src="images/gallery-trompo.jpg" alt="Trompo de pastor de Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+            </picture>
           </div>
           <div class="gallery-item has-photo fade-in">
-            <img src="images/gallery-tacos-servidos.jpg" alt="Tacos servidos en Taquería EL NEGRO" loading="lazy" width="243" height="174" />
+            <picture>
+              <source srcset="images/gallery-tacos-servidos.webp" type="image/webp" />
+              <img src="images/gallery-tacos-servidos.jpg" alt="Tacos servidos en Taquería EL NEGRO" loading="lazy" width="243" height="174" />
+            </picture>
           </div>
           <div class="gallery-item has-photo fade-in">
-            <img src="images/gallery-nopales.jpg" alt="Tacos con nopales asados en Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+            <picture>
+              <source srcset="images/gallery-nopales.webp" type="image/webp" />
+              <img src="images/gallery-nopales.jpg" alt="Tacos con nopales asados en Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+            </picture>
           </div>
           <div class="gallery-item has-photo fade-in">
-            <img src="images/gallery-gratinado.jpg" alt="Platillo gratinado de Taquería EL NEGRO" loading="lazy" width="243" height="304" />
+            <picture>
+              <source srcset="images/gallery-gratinado.webp" type="image/webp" />
+              <img src="images/gallery-gratinado.jpg" alt="Platillo gratinado de Taquería EL NEGRO" loading="lazy" width="243" height="304" />
+            </picture>
           </div>
           <div class="gallery-item has-photo fade-in">
-            <img src="images/gallery-especial.jpg" alt="Taco especial de Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+            <picture>
+              <source srcset="images/gallery-especial.webp" type="image/webp" />
+              <img src="images/gallery-especial.jpg" alt="Taco especial de Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+            </picture>
           </div>
           <div class="gallery-item has-photo fade-in">
-            <img src="images/gallery-para-llevar.jpg" alt="Orden para llevar de Taquería EL NEGRO" loading="lazy" width="243" height="174" />
+            <picture>
+              <source srcset="images/gallery-para-llevar.webp" type="image/webp" />
+              <img src="images/gallery-para-llevar.jpg" alt="Orden para llevar de Taquería EL NEGRO" loading="lazy" width="243" height="174" />
+            </picture>
           </div>
           <div class="gallery-item has-photo fade-in">
-            <img src="images/gallery-tacos-cerveza.jpg" alt="Tacos acompañados de una cerveza en Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+            <picture>
+              <source srcset="images/gallery-tacos-cerveza.webp" type="image/webp" />
+              <img src="images/gallery-tacos-cerveza.jpg" alt="Tacos acompañados de una cerveza en Taquería EL NEGRO" loading="lazy" width="243" height="406" />
+            </picture>
           </div>
           <div class="gallery-item has-photo fade-in">
-            <img src="images/gallery-quesadilla.jpg" alt="Quesadilla de la casa en Taquería EL NEGRO" loading="lazy" width="800" height="1067" />
+            <picture>
+              <source srcset="images/gallery-quesadilla.webp" type="image/webp" />
+              <img src="images/gallery-quesadilla.jpg" alt="Quesadilla de la casa en Taquería EL NEGRO" loading="lazy" width="800" height="1067" />
+            </picture>
           </div>
           <div class="gallery-item has-photo fade-in">
-            <img src="images/gallery-carne.jpg" alt="Carne preparándose en Taquería EL NEGRO" loading="lazy" width="1200" height="900" />
+            <picture>
+              <source srcset="images/gallery-carne.webp" type="image/webp" />
+              <img src="images/gallery-carne.jpg" alt="Carne preparándose en Taquería EL NEGRO" loading="lazy" width="1200" height="900" />
+            </picture>
           </div>
         </div>
       </div>
